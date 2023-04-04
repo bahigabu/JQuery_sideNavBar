@@ -1,0 +1,60 @@
+/* ↓全局設定↓ */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  position: relative;
+}
+/* ↑全局設定↑ */
+/* ↓最大框↓ */
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+  width: 260px;
+  height: 250px;
+  background-color: yellow;
+}
+/* ↑最大框↑ */
+/* ↓標題↓ */
+#left {
+  position: absolute;
+  width: 62px;
+  height: 253px;
+}
+#left li {
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid black;
+  border-top: none;
+  width: 100%;
+  height: 11%;
+  background-color: pink;
+}
+#left li:nth-child(1) {
+  border-top: 1px solid black;
+}
+/* ↑標題↑ */
+/* ↓圖片↓ */
+#content {
+  position: absolute;
+  left: 62px;
+  top: 0px;
+  width: 200px;
+  height: 250px;
+}
+#content div {
+  display: none;
+}
+#content .first {
+  display: block;
+}
+/* ↑圖片↑ */
